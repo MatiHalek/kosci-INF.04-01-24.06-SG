@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilna.MainPage" BackgroundColor="#F5F5DC">
+
+    <StackLayout>
+        <Label Padding="5" Text="Gra w kości. Autor PESEL" BackgroundColor="#A52A2A" Margin="0, 10" TextColor="White" FontSize="Large" HorizontalOptions="Fill"/>
+        <Button Clicked="DiceButton_Clicked" Text="RZUĆ KOŚĆMI" BackgroundColor="#D2691E" Margin="0, 10" HorizontalOptions="Center" TextColor="White" CornerRadius="10"/>
+        <FlexLayout BackgroundColor="White" HorizontalOptions="Fill">
+            <Image Source="k6_0.jpg" x:Name="dice1Image" Margin="9" HeightRequest="60" />
+            <Image Source="k6_0.jpg" x:Name="dice2Image" Margin="9" HeightRequest="60" />
+            <Image Source="k6_0.jpg" x:Name="dice3Image" Margin="9" HeightRequest="60" />
+            <Image Source="k6_0.jpg" x:Name="dice4Image" Margin="9" HeightRequest="60" />
+            <Image Source="k6_0.jpg" x:Name="dice5Image" Margin="9" HeightRequest="60" />
+        </FlexLayout>
+        <Label Text="Wynik tego losowania: " x:Name="roundScoreLabel" Margin="0, 10" TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Label Text="Wynik gry: " x:Name="totalScoreLabel" Margin="0, 10" TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Button Clicked="ResetButton_Clicked" Text="RESETUJ WYNIK" BackgroundColor="#D2691E" Margin="0, 10" HorizontalOptions="Center" TextColor="White" CornerRadius="10"/>
+    </StackLayout>
+
+</ContentPage>
+
